@@ -18,4 +18,7 @@ const knex = require("knex")({
     }
 });
 
+app.get("/", (req, res) => res.render("index"));
+
+
 app.listen(port, () => console.log("Express App has started and server is listening!"));
